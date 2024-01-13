@@ -1,0 +1,517 @@
+html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+header {
+    background-image: url('ferrari.jpg'); 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    height: fit-content;   
+}
+
+nav {
+    margin-right: 40px;
+    margin-left: 40px;
+    border-radius: 65px;
+    background: transparent;
+    backdrop-filter: blur(100px);
+    padding: 1rem 5rem;
+    justify-content: space-between;
+    padding: 1rem 10rem;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    margin-left: 60%;
+    gap: 5rem;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #FAE7C9;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 650;
+    padding: 5px 0;
+    transition: all;
+    transition-duration: 400ms;
+    border-bottom: 1px solid rgba(255, 145, 48, 0)0;
+}
+
+nav ul li a:hover {
+    color: #FF9130;
+    border-bottom: 1px solid #FF9130;
+}
+
+.perkenalan {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 800px;
+    color: antiquewhite;
+    
+}
+
+.perkenalan h2  {
+    font-size: 100px;
+}
+
+.perkenalan .btn {
+    background-color: #161A30;
+    border-color: transparent;
+    color: #FAE7C9;
+    height: 40px;
+    width: 150px;
+    transition: all;
+    transition-duration: 400ms;
+    border-radius: 20px;
+}
+
+.perkenalan .btn:hover {
+    background-color: #F0ECE5;
+    color: #31304D;
+}
+
+
+
+.judul {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-top: 80px;
+}
+.judul h2 {
+    text-align: center;
+    padding-bottom: 30px;
+    font-size: 50px;
+}
+
+.produk {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.mobil {
+    width: 600px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 10);
+    background-color: #9ba8a9;
+    text-align: center;
+  }
+
+  .mobil img {
+    max-width: 40%;
+    border-radius: 10%;
+    height: 100px;
+    transition: all;
+    transition-duration: 250ms;
+  }
+
+.mobil img:hover{
+    max-width: 45%;
+    height: 250px;
+}
+
+  .mobil h2 {
+    font-size: 30px;
+    color: #FAE7C9;
+  }
+
+
+  .mobil p {
+    font-size: 20px;
+    color:#FAE7C9;
+    padding-bottom: 30px;
+  }
+
+.produk .btn_produk {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 30px;
+    width: 140px;
+    background-color: #161A30;
+    color: #F0ECE5;
+    height: 30px;
+    transition: all;
+    transition-duration: 350ms;
+}
+
+.produk .btn_produk:hover {
+    background-color: #F0ECE5;
+    color: #161A30;
+
+}
+
+.tawaran {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 150px;
+    padding-bottom: 65px;
+}
+
+.slider-container {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    max-width: 400px;
+    margin: 10px auto;
+    
+}
+
+.cards {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    gap: 5rem;
+    transition: transform 0.4s ease-in-out;
+}
+
+.card {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    flex: 0 0 100%;
+    box-sizing: border-box;
+    border-radius: 40px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #FAE7C9;
+    text-align: center;
+    
+}
+
+.card img {
+    max-width: 90%;
+    border-radius: 40px;
+    height: 50%;
+}
+
+.card .kunjungi {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #161A30;
+    border-color: transparent;
+    color: #FAE7C9;
+    height: 30px;
+    width: 150px;
+    transition: all;
+    transition-duration: 400ms;
+    border-radius: 20px;
+}
+
+.card .kunjungi:hover {
+    background-color: #F0ECE5;
+    color: #31304D;
+    border: 2px solid #161A30;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 100rem;
+    margin-left: 40px;
+    margin-top: 40px;
+    
+}
+
+.prev {
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: all;
+    transition-duration: 250ms;
+}
+
+.next {
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: all;
+    transition-duration: 250ms;
+}
+
+.next:hover {
+    color: #FAE7C9;
+    background-color: #31304D;
+}
+.prev:hover {
+    color: #FAE7C9;
+    background-color: #31304D;
+}
+
+.list-mobil {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.list {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #161A30;
+    border-color: transparent;
+    color: #FAE7C9;
+    height: 80px;
+    width: 250px;
+    transition: all;
+    transition-duration: 400ms;
+    border-radius: 20px;
+}
+
+.list:hover {
+    font-size: 20px;
+    border: 2px solid #161A30;
+    background-color: #F0ECE5;
+    color: #31304D;
+}
+
+.promosi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    margin-bottom: 220px;
+}
+
+.iklan {
+    border: #FAE7C9;
+    border-radius: 40px;
+    background-color: #FAE7C9;
+    width: 1400px;
+    max-width: 50%;
+    height: 480px;
+}
+
+.judul-iklan {
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    padding-left: 30px;
+}
+
+.judul-iklan h2 {
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.judul-iklan p {
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 700;
+}
+
+.alur-iklan {
+    display: flex;
+}
+
+.alur-iklan .nomor1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-left: 20px;
+}
+.alur-iklan .nomor2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-left: 20px;
+    padding-right: 10px;
+}
+.alur-iklan .nomor3 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-right: 10px;
+}
+
+.alur-iklan .nomor1 h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: #31304D;
+    border-radius: 6px;
+    text-align: center;
+    padding-top: 10px;
+    height: 40px;
+    width: 50px;
+    background-color: #31304D;
+    color: #ddd;
+}
+
+.alur-iklan .nomor2 h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: #31304D;
+    border-radius: 6px;
+    text-align: center;
+    padding-top: 10px;
+    height: 40px;
+    width: 50px;
+    background-color: #31304D;
+    color: #ddd;
+}
+
+.alur-iklan .nomor3 h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: #31304D;
+    border-radius: 6px;
+    text-align: center;
+    padding-top: 10px;
+    height: 40px;
+    width: 50px;
+    background-color: #31304D;
+    color: #ddd;
+}
+
+.btn-list-mobil button{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #161A30;
+    border-color: transparent;
+    color: #FAE7C9;
+    height: 40px;
+    width: 150px;
+    transition: all;
+    transition-duration: 400ms;
+    border-radius: 20px;
+    
+}
+
+.btn-list-mobil button:hover {
+    width: 170px;
+    height: 55px;
+    font-size: 20px;
+    border: 2px solid #161A30;
+    background-color: #F0ECE5;
+    color: #31304D;
+}
+
+.btn-list-mobil {
+    padding-top: 20px;
+    padding-left: 700px;
+}
+
+.container {
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    background-color:  rgb(53, 53, 53);
+    color: #fff;
+  }
+
+@media screen and (max-width:700px){
+    .container {
+      display: flex;
+      flex-direction: column;
+    }
+    .f_socile {
+      justify-content: left;
+      align-items: start;
+    }
+    .bawahikon p {
+      text-align: center;
+    }
+    .footer_bottom_inner {
+      margin-top: 30px;
+    }
+  }
+  
+  .judulfoot {
+    height: 100%;
+    border-right: 1px solid #fff;
+    padding-right: 35px;
+    align-items: center;
+  }
+  
+  .sampingfoot p {
+    font-family: sans-serif;
+    position: relative;
+    top: 30%;
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  
+  .judulfoot h2 {
+    font-family: sans-serif;
+    position: relative;
+    top: 30%;
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  
+  
+  .corporate_office {
+    background-color: rgb(53, 53, 53);
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px  rgb(53, 53, 53);
+    text-align: left;
+    margin-bottom: 20px; 
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .corporate_office h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .corporate_office p {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+  
+  .f_socile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .f_socile li {
+    margin-right: 2px;
+  }
+  
+  .f_socile img {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    filter: brightness(0);
+    transition: filter 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  }
+  
+  .f_socile img, .hover_img {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    filter: brightness(1);
+    transition: filter 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  }
+  
+  .f_socile a .hover_img {
+    opacity: 0;
+  }
+  
+  .f_socile a:hover img {
+    filter: brightness(0);
+  }
+  
+  .bawahikon p {
+    margin: 10px 0;
+  }
+    
+  .btn-link {
+    text-decoration: none; 
+    color: white;
+  }
+  
+  .btn-link:focus,
+  .btn-link:active {
+    outline: none; 
+  }
+  

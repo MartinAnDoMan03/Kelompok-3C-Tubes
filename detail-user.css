@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #DED0B6, #B6BBC4, #9EB8D9);
+    color: #fff;
+}
+
+.user-profile {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgb(55, 49, 49);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.user-profile h1 {
+    text-align: center;
+    color: #ff4444;
+    margin-bottom: 20px;
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-item {
+    margin-bottom: 15px;
+}
+
+.profile-item label {
+    font-weight: bold;
+    color: #ff4444;
+    margin-bottom: 5px;
+}
+
+.profile-item span {
+    color: #fff;
+    font-size: 18px;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.update-btn,
+.logout-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.update-btn {
+    background-color: #4CAF50; 
+    color: white;
+}
+
+.update-btn:hover {
+    background-color: #45a049; 
+}
+
+.logout-btn {
+    background-color: #f44336; 
+    color: white;
+}
+
+.logout-btn:hover {
+    background-color: #d32f2f; 
+}

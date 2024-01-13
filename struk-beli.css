@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #db3434, #db8d84, #43494d);
+}
+
+.background {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.struk {
+    width: 500px;
+    height: 350px;
+    padding: 50px;
+    border: 1px solid #000000;
+    background-color: azure;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+.btn {
+    padding: 10px 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 30px;
+    cursor: pointer;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    transition: all;
+    transition-duration: 250ms;
+}
+
+.btn:hover {
+    height: 50px;
+}
+
+.terimakasih {
+    display: none;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+}
+
+@keyframes drive {
+    to {
+        transform: translateY(-100vh);
+    }
+}
+
+#konfirmasiModal, #batalModal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+#batalModal {
+    background-color: #FFEBE6; 
+}
+
+.closeButton {
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-weight: bold;
+}
+
+#terimakasihContainer {
+    display: none;
+}
+
+#tandaCentang {
+    font-size: 4em;
+    color: #4CAF50;
+    margin-bottom: 20px;
+}

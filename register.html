@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+   <form action="save-user.php" method="POST">
+    <div class="box">
+        <div class="container">
+            <div class="top">
+               <br><header>Register</header><br> 
+            </div>
+            <div class="input-field">
+                <input type="text" class="input" placeholder="Username" name="username" required>
+            </div><br>
+            <div class="input-field">
+                <input type="text" class="input" placeholder="Name" name="nama" required>
+            </div><br>
+            <div class="input-field">
+                <input type="password" class="input" placeholder="Password" name="password" required>
+                <i class='bx bx-lock-alt'></i>
+            </div><br>
+            <div class="input-field">
+                <input type="text" class="input" placeholder="E-mail" name="email" required>
+            </div><br>
+            <div>
+                <a href="homepage.html"><input type="submit" class="button" placeholder="Register" name="btn-daftar"></a>
+            </div>
+            <div class="two-col">
+                <div class="one">
+                    <label>Already have an account?</label><br>
+                    <a href="login.php"><p>Login</p></a>
+                </div>
+            </div>
+           </div>
+        </div>
+       </div>
+   </form>
+</body>
+</html>
